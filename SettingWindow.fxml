@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane id="body" alignment="center" hgap="10" stylesheets="@styles.css" vgap="10" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="700.0" prefWidth="1000.0">
+         <children>
+            <Pane layoutX="-7.0" layoutY="625.0" prefHeight="77.0" prefWidth="1000.0" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <children>
+                  <Button id="buttons" fx:id="btn_load" layoutX="14.0" layoutY="-1.0" mnemonicParsing="false" onAction="#load" text="Load Game Folder">
+                     <font>
+                        <Font name="Arial" size="12.0" />
+                     </font>
+                  </Button>
+                  <Pane id="status-pane" layoutY="48.0" prefHeight="30.0" prefWidth="1000.0">
+                     <children>
+                        <Label fx:id="status" layoutX="14.0" layoutY="6.0" textFill="WHITE" />
+                     </children>
+                  </Pane>
+                  <Button id="buttons" fx:id="btn_save" layoutX="750.0" layoutY="-4.0" mnemonicParsing="false" onAction="#save" text="Save">
+                     <font>
+                        <Font name="Arial" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button id="buttons" fx:id="btn_sync" layoutX="825.0" layoutY="-4.0" mnemonicParsing="false" onAction="#sync" text="Sync to all profiles">
+                     <font>
+                        <Font name="Arial" size="12.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+            <TabPane fx:id="tab_pane" prefHeight="607.0" prefWidth="1000.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="93.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>

@@ -1,0 +1,15 @@
+#body{
+    -fx-background-color: #001d3d;
+    -fx-font-family: Calibri;
+
+}
+#status-pane{
+    -fx-background-color: #003566;
+}
+#buttons{
+    -fx-font-size: 18px;
+    -fx-background-color: #007EF5;
+}
+#buttons:hover{
+    -fx-background-color: #0069CC;
+}
