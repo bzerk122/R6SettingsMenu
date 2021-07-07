@@ -2,6 +2,9 @@
 ## Premise:
 The goal of this app is to be able to quickly edit your ini file for Rainbow Six Siege.
 
+## Requirements:
+This app requires you to have atleast java version 12.
+
 [Download Current Version](https://github.com/bzerk122/R6SettingsMenu/releases/tag/0.2)
 
 ## Features:
